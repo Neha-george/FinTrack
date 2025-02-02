@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home </title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-item">Settings</div>
+        <div class="sidebar-item">Language</div>
+        <div class="sidebar-item">Currency</div>
+    </div>
+    <div class="main-content">
+        <div class="top-bar">
+            <button id="calendar-button">📅</button>
+            <div id="calendar-container" class="hidden">
+                <input type="month" id="calendar">
+            </div>
+            <input type="search" id="search-bar" placeholder="Search...">
+            <div id="total-balance">Total Balance: $0.00</div>
+        </div>
+        <div class="expense-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Expense</th>
+                    </tr>
+                </thead>
+                <tbody id="expense-rows">
+                    <!-- Expense rows will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+        <div class="credit-debit">
+            <div id="credit-total">Total Credited: $0.00</div>
+            <div id="debit-total">Total Debited: $0.00</div>
+        </div>
+        <button id="voice-icon">🎤</button>
+        <div class="bottom-bar">
+            <div class="bottom-item">📋 Records</div>
+            <div class="bottom-item">📊 Charts</div>
+            <div class="bottom-item">📝 Summary</div>
+            <div class="bottom-item">👤 Profile</div>
+        </div>
+    </div>
+</body>
+</html>

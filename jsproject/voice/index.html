@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Recognition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Please speak into microphone</h1>
+    <button id="mic-button">Start Recording</button>
+    <button id="voice-assistant-button">Get Voice Assistant</button>
+    <p id="voice-input"></p>
+    <table id="expense-table">
+        <thead>
+            <tr>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody id="expense-table-body">
+        </tbody>
+    </table>
+    <p>Total Balance: <span id="totalBalance">0.00Rs</span></p>
+    <p>Total Expenditure: <span id="totalExpenditure">0.00Rs</span></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
