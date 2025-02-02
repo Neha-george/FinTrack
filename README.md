@@ -43,7 +43,7 @@ For Software:
 
 ## Overview
  
-This budget tracker app is a powerful tool that combines advanced technologies like Firebase Firestore,PWA ,SMS parsing  OCR, AI,ML, and pattern recognition to provide users with a comprehensive and intuitive financial management solution. With features designed to enhance security, convenience, and accuracy, users can effectively manage their expenses, set financial goals, and make informed financial decisions.The system also tracks the last four digits of the account number and other patterns to improve its accuracy.
+This budget tracker app is a powerful tool that combines advanced technologies like Firebase Firestore,PWA ,SMS parsing  **OCR, AI,ML,** and pattern recognition to provide users with a comprehensive and intuitive financial management solution. With features designed to enhance security, convenience, and accuracy, users can effectively manage their expenses, set financial goals, and make informed financial decisions.The system also tracks the last four digits of the account number and other patterns to improve its accuracy.
 
 
 ## Features
