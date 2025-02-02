@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set PIN</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .pin-input {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .pin-input input {
+            width: 50px;
+            height: 50px;
+            margin: 0 5px;
+            font-size: 24px;
+            text-align: center;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+        .pin-input input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        .set-pin-text {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="set-pin-text">Set PIN</div>
+        <div class="pin-input">
+            <input type="password" maxlength="1" id="pin1" oninput="moveToNext(this, 'pin2')">
+            <input type="password" maxlength="1" id="pin2" oninput="moveToNext(this, 'pin3')">
+            <input type="password" maxlength="1" id="pin3" oninput="moveToNext(this, 'pin4')">
+            <input type="password" maxlength="1" id="pin4" oninput="checkPin()">
+        </div>
+    </div>
+
+    <script>
+        function moveToNext(current, nextId) {
+            if (current.value.length === 1) {
+                document.getElementById(nextId).focus();
+            }
+        }
+
+        function checkPin() {
+            const pin1 = document.getElementById('pin1').value;
+            const pin2 = document.getElementById('pin2').value;
+            const pin3 = document.getElementById('pin3').value;
+            const pin4 = document.getElementById('pin4').value;
+
+            if (pin1 && pin2 && pin3 && pin4) {
+                const fullPin = pin1 + pin2 + pin3 + pin4;
+                console.log('PIN entered:', fullPin); // For debugging purposes
+                // Redirect to the next page
+                window.location.href = 'next_page.html';
+            }
+        }
+    </script>
+</body>
+</html>

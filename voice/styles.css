@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+#voice-input {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#expense-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+#expense-table th, #expense-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#expense-table th {
+    background-color: #f0f0f0;
+}
+
+#totalBalance, #totalExpenditure {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50;
+}

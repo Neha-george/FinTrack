@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker with Voice Assistance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Budget Tracker</h1>
+
+        <!-- Balance Section -->
+        <div id="balance-section">
+            <h2>Balance: ₹<span id="balance">0</span></h2>
+            <button id="voice-btn">Add Amount via Voice</button>
+            <p id="voice-input">Click the button and speak your expense.</p>
+        </div>
+
+        <!-- Receipt Upload Section -->
+        <div id="receipt-upload">
+            <h2>Upload Receipt</h2>
+            <input type="file" id="file-input" accept="image/*" multiple>
+            <div id="uploaded-images"></div>
+        </div>
+
+        <!-- Manual Entry Section -->
+        <div id="manual-entry">
+            <h2>Manual Entry</h2>
+            <input type="number" id="amount-input" placeholder="Enter amount">
+            <select id="category-input">
+                <option value="">Select category</option>
+                <option value="food">Food</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="shopping">Shopping</option>
+                <!-- Add more categories as needed -->
+            </select>
+            <button id="save-btn">Save Expense</button>
+        </div>
+
+        <!-- Expense List Section -->
+        <div id="expense-list">
+            <h2>Expenses</h2>
+            <ul id="expenses"></ul>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
