@@ -1,10 +1,8 @@
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const calendarButton = document.getElementById('calendar-button');
     const calendarContainer = document.getElementById('calendar-container');
     const voiceIcon = document.getElementById('voice-icon');
+    const sms = document.getElementById('sms'); // Added this line to get the sms button element
 
     calendarButton.addEventListener('click', () => {
         calendarContainer.classList.toggle('hidden');
@@ -12,6 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     voiceIcon.addEventListener('click', () => {
         window.location.href = 'voice-input.html'; // Replace with the actual page
+    });
+
+    sms.addEventListener('click', () => {
+        window.location.href = 'sms.html'; // Replace with the actual page
     });
 
     // Example data
